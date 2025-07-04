@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XVANNN DEPLOY</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #ff3d3d, #2b2bff);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .card {
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      padding: 40px;
+      width: 90%;
+      max-width: 400px;
+      text-align: center;
+    }
+    .card h2 {
+      color: #333;
+      margin-bottom: 10px;
+    }
+    input[type="text"], input[type="file"] {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background: linear-gradient(90deg, red, blue);
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    button:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>Deploy ke Vercel</h2>
+    <p>Upload file ZIP project Anda dan masukkan nama project untuk deploy ke Vercel</p>
+    <input type="text" placeholder="contoh: my-awesome-project" />
+    <input type="file" />
+    <button>Deploy ke Vercel</button>
+  </div>
+</body>
+</html>
